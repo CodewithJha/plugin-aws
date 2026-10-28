@@ -1,0 +1,13 @@
+$ ./gradlew test --tests '*kinesis.PutRecordsTest'    # upstream/main + new tests, Floci Kinesis
+
+PutRecordsTest > runStorageMoreThanOneBatch() FAILED
+    InvalidArgumentException: A PutRecords request supports at most 500 records, got 1201.
+    (Service: Kinesis, Status Code: 400)
+PutRecordsTest > runMapAtAndAboveBatchLimit() FAILED
+    InvalidArgumentException: A PutRecords request supports at most 500 records, got 501.
+    (Service: Kinesis, Status Code: 400)
+PutRecordsTest > runMap() PASSED   (3 records)
+PutRecordsTest > runStorage() PASSED   (3 records)
+PutRecordsTest > runStorageUpperCase() PASSED   (3 records)
+
+5 tests completed, 2 failed   BUILD FAILED

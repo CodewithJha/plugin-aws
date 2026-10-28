@@ -1,0 +1,22 @@
+$ ./gradlew test --tests '*aws.kinesis*'    # this branch, Floci Kinesis
+
+PutRecordsBatchingTest > partitionAboveByteLimitSplitsBeforeTheEntryThatOverflows() PASSED
+PutRecordsBatchingTest > putInBatchesWithoutEntriesSendsNothing() PASSED
+PutRecordsBatchingTest > partitionEmpty() PASSED
+PutRecordsBatchingTest > partitionCountsThePartitionKeyInTheByteLimit() PASSED
+PutRecordsBatchingTest > partitionAtRecordLimitIsASingleBatch() PASSED
+PutRecordsBatchingTest > putInBatchesAggregatesFailuresAcrossBatchesAndKeepsOrder() PASSED
+PutRecordsBatchingTest > partitionAtByteLimitIsASingleBatch() PASSED
+PutRecordsBatchingTest > partitionKeepsInputOrder() PASSED
+PutRecordsBatchingTest > partitionKeepsAnOversizedEntryInItsOwnBatch() PASSED
+PutRecordsBatchingTest > partitionAboveRecordLimitSplitsInTwo() PASSED
+PutRecordsBatchingTest > partitionBelowLimitIsASingleBatch() PASSED
+PutRecordsTest > runMapAtAndAboveBatchLimit() PASSED
+PutRecordsTest > runMap() PASSED
+PutRecordsTest > runStorageUpperCase() PASSED
+PutRecordsTest > runStorage() PASSED
+PutRecordsTest > runStorageMoreThanOneBatch() PASSED
+
+PutRecordsBatchingTest: 11 passed, PutRecordsTest: 5 passed, 0 failed
+Consume/Trigger/RealtimeTrigger kinesis tests: 4 passed
+BUILD SUCCESSFUL
