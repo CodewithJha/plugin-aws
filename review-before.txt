@@ -1,0 +1,4 @@
+    EVIDENCE requests sent: 3 (no retry)
+    EVIDENCE failedRecordCount: 3 -> task FAILS with failOnUnsuccessfulRecords: true
+    EVIDENCE exception message length: 92349 characters, 1201 result entries printed
+    EVIDENCE message head: Response show 3 record failed: [PutRecordsResultEntry(SequenceNumber=49630, ShardId=shardId-000000000000), PutRecordsResultEntry(SequenceNumber=49631, ShardId=shardId-000000000000), PutRecordsResultEntry(SequenceNumber=49632, ShardId=shardId-000000000000), Put ...
